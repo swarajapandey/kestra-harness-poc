@@ -3,4 +3,4 @@ namespace: team1
 tasks:
   - id: greet
     type: io.kestra.plugin.core.log.Log
-    message: "Harness is awesome and amazing"
+    message: "Harness is awesome and amazing and best"
