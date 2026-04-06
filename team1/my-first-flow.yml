@@ -1,6 +1,6 @@
-id: kestra-hello
-namespace: tutorial
+id: hello-world
+namespace: marketing_team_alpha  # <-- Kestra will auto-create this!
 tasks:
   - id: greet
     type: io.kestra.plugin.core.log.Log
-    message: "Harness is awesome and amazing best"
+    message: "Harness is awesome and amazing!"
