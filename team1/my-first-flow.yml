@@ -1,5 +1,5 @@
-id: hello-world
-namespace: marketing_team_alpha  # <-- Kestra will auto-create this!
+id: amazing_harness
+namespace: swaraj_kestra_flow
 tasks:
   - id: greet
     type: io.kestra.plugin.core.log.Log
