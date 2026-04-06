@@ -1,6 +1,6 @@
-id: amazing_harness
-namespace: swaraj_kestra_flow
+id: hello-world
+namespace: team1
 tasks:
   - id: greet
     type: io.kestra.plugin.core.log.Log
-    message: "Harness is awesome and amazing!"
+    message: "Hello from the automated pipeline!"
