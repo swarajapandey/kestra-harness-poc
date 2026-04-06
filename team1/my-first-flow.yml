@@ -1,6 +1,6 @@
-id: hello-world
-namespace: team1
+id: kestra-hello
+namespace: tutorial
 tasks:
-  - id: greet
-    type: io.kestra.plugin.core.log.Log
-    message: "Harness is awesome and amazing "
+  - id: greet
+    type: io.kestra.plugin.core.log.Log
+    message: "Harness is awesome and amazing!"
