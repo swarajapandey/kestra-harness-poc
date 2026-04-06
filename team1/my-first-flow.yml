@@ -3,4 +3,4 @@ namespace: team1
 tasks:
   - id: greet
     type: io.kestra.plugin.core.log.Log
-    message: "Hello from the automated pipeline in harness!"
+    message: "Hello from the automated pipeline in harness and avyka!"
