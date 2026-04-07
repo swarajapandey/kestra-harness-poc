@@ -1,6 +1,24 @@
-id: hello-world3
+id: hello-kestra-3
 namespace: team1
-tasks:
-  - id: meet
+
+description: A sample flow to test triggers and logging.
+
+task:
+  id: log_message
     type: io.kestra.plugin.core.log.Log
-    message: "Hello from the automated pipeline in harness "
+    message: "Hello from Kestra! The current date is {{ now() }}"
+
+  - id: shell_step
+    type: io.kestra.plugin.scripts.shell.Commands
+    commands:
+      - echo "Checking system storage..."
+      - df -h
+
+triggers:
+  - id: schedule
+    type: io.kestra.plugin.core.trigger.Schedule
+    cron: "* * * * *" # Runs every minute
+
+  - id: webhook
+    type: io.kestra.plugin.core.trigger.Webhook
+    key: my-secret-key # Access via: http://localhost:8080/api/v1/executions/webhook/dev/hello_kestra/my-secret-key
