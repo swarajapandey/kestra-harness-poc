@@ -1,1 +1,6 @@
-
+id: hello_world
+namespace: team1.team
+tasks:
+  - id: log_task
+    type: io.kestra.plugin.core.log.Log
+    message: hi from {{ flow.namespace }}
