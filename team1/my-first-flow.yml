@@ -1,6 +1,6 @@
 id: hello-world
 namespace: team1
 tasks:
-  - id: greet
-    type: io.kestra.plugin.core.log.Log
-    message: "Hello from the automated pipeline in harness, hi"
+  3- id: greet
+   3 type: io.kestra.plugin.core.log.Log
+  3  message: "Hello from the automated pipeline in harness, hi"
